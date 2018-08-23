@@ -3,14 +3,25 @@
   "version": "1.0.0",
   "description": "Whatsapp chat parser javascript",
   "main": "index.js",
+  "keywords": [
+    "whatsapp",
+    "parser",
+    "chat",
+    "chat parser"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s8sachin/whatsapp-chat-parser.git"
+  },
+  "author": "s8sachin <s.sachin94@gmail.com> (https://github.com/s8sachin)",
   "scripts": {
     "test": "mocha test.js",
     "start": "node index.js",
     "example": "node example.js"
   },
-  "author": "s8sachin",
-  "license": "ISC",
-  "dependencies": {
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
     "chai": "^4.1.2",
     "mocha": "^5.2.0"
   }
