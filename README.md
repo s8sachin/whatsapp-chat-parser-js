@@ -6,12 +6,12 @@ This is whatsapp chat parser for exported whatsapp chat.
 
 ### 1. install to your project.
 ```
-npm install whatsapp-chat-parser --save
+npm install whatsapp-chat-parser-js --save
 ```
 
 ### 2. import.
 ```
-const whatsappParser = require('whatsapp-chat-parser')
+const whatsappParser = require('whatsapp-chat-parser-js')
 ```
 
 ### 3. usage
@@ -42,6 +42,22 @@ whatsappParser('sampleChat.txt')
   { time: '8/8/18, 6:04 PM',
     sender: 'The Joker',
     msg: 'If you\'re good at something, never do it for free.' } ]
+```
+
+### Run Example
+
+```
+$ git clone https://github.com/s8sachin/whatsapp-chat-parser-js.git
+$ npm run example
+```
+
+### Run Tests with mocha
+
+```
+$ npm install mocha -g
+$ git clone https://github.com/s8sachin/whatsapp-chat-parser-js.git
+$ npm install
+$ npm test
 ```
     
 ## Fork it. and contribute your ideas :)
