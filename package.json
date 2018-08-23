@@ -1,5 +1,5 @@
 {
-  "name": "whatsapp-chat-parser",
+  "name": "whatsapp-chat-parser-js",
   "version": "1.0.0",
   "description": "Whatsapp chat parser javascript",
   "main": "index.js",
@@ -11,7 +11,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/s8sachin/whatsapp-chat-parser.git"
+    "url": "git+https://github.com/s8sachin/whatsapp-chat-parser-js.git"
   },
   "author": "s8sachin <s.sachin94@gmail.com> (https://github.com/s8sachin)",
   "scripts": {
