@@ -48,6 +48,7 @@ whatsappParser('sampleChat.txt')
 
 ```
 $ git clone https://github.com/s8sachin/whatsapp-chat-parser-js.git
+$ npm install
 $ npm run example
 ```
 
@@ -59,5 +60,7 @@ $ git clone https://github.com/s8sachin/whatsapp-chat-parser-js.git
 $ npm install
 $ npm test
 ```
+
+#### published on [npm](https://www.npmjs.com/package/whatsapp-chat-parser-js)
     
 ## Fork it. and contribute your ideas :)
