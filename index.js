@@ -1,7 +1,12 @@
 var fs = require('fs');
 
 module.exports = async (file) => {
-  let myLines = fs.readFileSync(file).toString();
+  var myLines;
+  try {
+    myLines = fs.readFileSync(file).toString();
+  } catch (e) {
+    throw new Error(`No such file ${file}`);
+  }
   myLines = myLines.split(/([0-9]{1,2}\/[0-9]{1,2}\/[0-9]{1,2}, [0-9]{1,2}:[0-9]{1,2}\s?[A-z]{0,2} - )/gm||[]).filter(e => e);
   let messages = [];
   for(let i = 0; i < myLines.length; i++) {
@@ -20,10 +25,10 @@ module.exports = async (file) => {
       messages.push({
         time, sender, msg
       });
-    }
-  }
+    };
+  };
   if (messages.length === 0) {
-    return new Error('Wrong file type or chat format');
-  }
+    throw new Error('Wrong file type or chat format');
+  };
   return messages;
 }

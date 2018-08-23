@@ -1,5 +1,5 @@
-var parser = require('./index');
+var whatsappParser = require('./index');
 
-parser('sampleChat.txt')
+whatsappParser('sampleChat.txt')
 .then(messages => console.log(messages))
 .catch(e => console.log(e));
