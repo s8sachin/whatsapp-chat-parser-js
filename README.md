@@ -1,6 +1,6 @@
-# whatsapp-chat-parser
+# Whatsapp Chat Parser Javascript
 
-This is whatsapp chat parser for exported whatsapp chat.
+This is whatsapp chat parser for exported whatsapp chat log.
 
 ## instructions
 

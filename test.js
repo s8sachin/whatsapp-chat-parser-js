@@ -1,10 +1,16 @@
 const chai = require('chai');
+const moment = require('moment');
 const expect = chai.expect;
 
 // const expect = require('expect');
 const whatsappParser = require('./index');
 
-const properChatOutput = [ { time: '8/8/18, 6:00 PM', sender: 'The Chechen', msg: 'What do you propose?' }, { time: '8/8/18, 6:01 PM', sender: 'The Joker', msg: 'It\'s simple. We, uh, kill the Batman.' }, { time: '8/8/18, 6:03 PM', sender: 'Salvatore Maroni', msg: 'If it\'s so simple, why haven\'t you done it already?' }, { time: '8/8/18, 6:04 PM', sender: 'The Joker', msg: 'If you\'re good at something, never do it for free.' } ];
+const properChatOutput = [ 
+  { time: moment('8/8/18, 6:00 PM', "MM/DD/YY, hh:mm a").toDate(),sender: 'The Chechen',msg: 'What do you propose?' },
+  { time: moment('8/8/18, 6:01 PM', "MM/DD/YY, hh:mm a").toDate(),sender: 'The Joker',msg: 'It\'s simple. We, uh, kill the Batman.' },
+  { time: moment('8/8/18, 6:03 PM', "MM/DD/YY, hh:mm a").toDate(),sender: 'Salvatore Maroni',msg: 'If it\'s so simple, why haven\'t you done it already?' },
+  { time: moment('8/8/18, 6:04 PM', "MM/DD/YY, hh:mm a").toDate(),sender: 'The Joker',msg: 'If you\'re good at something, never do it for free.' } 
+];
 
 describe('Parser', () => {
 

@@ -1,6 +1,6 @@
 {
   "name": "whatsapp-chat-parser-js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Whatsapp chat parser javascript",
   "main": "index.js",
   "keywords": [
@@ -20,7 +20,9 @@
     "example": "node example.js"
   },
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "moment": "^2.22.2"
+  },
   "devDependencies": {
     "chai": "^4.1.2",
     "mocha": "^5.2.0"

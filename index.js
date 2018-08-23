@@ -1,7 +1,8 @@
-var fs = require('fs');
+const fs = require('fs');
+const moment = require('moment');
 
 module.exports = async (file) => {
-  var myLines;
+  let myLines;
   try {
     myLines = fs.readFileSync(file).toString();
   } catch (e) {
@@ -11,6 +12,7 @@ module.exports = async (file) => {
   let messages = [];
   for(let i = 0; i < myLines.length; i++) {
     let time = myLines[i].replace(/ - /, '');
+    time = moment(time, "MM/DD/YY, hh:mm a").toDate();
     let chat = myLines[i+1] && myLines[i+1].split(/: (.+)?/);
     let sender, msg;
     if (chat) {
