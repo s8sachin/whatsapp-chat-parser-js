@@ -1,18 +1,17 @@
 {
-  "name": "whats",
+  "name": "whatsapp-chat-parser",
   "version": "1.0.0",
-  "description": "",
+  "description": "Whatsapp chat parser javascript",
   "main": "index.js",
   "scripts": {
     "test": "mocha test.js",
-    "start": "node index.js"
+    "start": "node index.js",
+    "example": "node example.js"
   },
-  "author": "",
+  "author": "s8sachin",
   "license": "ISC",
   "dependencies": {
     "chai": "^4.1.2",
-    "expect": "^23.5.0",
-    "mocha": "^5.2.0",
-    "node-whatsapp-parser": "^2.0.0"
+    "mocha": "^5.2.0"
   }
 }
