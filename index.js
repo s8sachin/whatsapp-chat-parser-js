@@ -22,5 +22,8 @@ module.exports = async (file) => {
       });
     }
   }
+  if (messages.length === 0) {
+    return new Error('Wrong file type or chat format');
+  }
   return messages;
 }
