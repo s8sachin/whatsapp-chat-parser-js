@@ -1,4 +1,4 @@
-# Whatsapp Chat Parser Javascript
+# [Whatsapp Chat Parser Javascript](https://www.npmjs.com/package/whatsapp-chat-parser-js)
 
 This is whatsapp chat parser for exported whatsapp chat log.
 
