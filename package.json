@@ -1,6 +1,6 @@
 {
   "name": "whatsapp-chat-parser-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Whatsapp chat parser javascript",
   "main": "index.js",
   "keywords": [
