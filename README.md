@@ -2,6 +2,9 @@
 
 This is whatsapp chat parser for exported whatsapp chat log.
 
+[![](https://data.jsdelivr.com/v1/package/npm/whatsapp-chat-parser-js/badge)](https://www.jsdelivr.com/package/npm/whatsapp-chat-parser-js)
+
+
 ## instructions
 
 ### 1. install to your project.
